@@ -1,0 +1,21 @@
+# text files use LF everywhere
+* text=auto eol=lf
+
+# binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.exr binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.fbx binary
+*.blend binary
+*.ttf binary
+*.otf binary
+*.zip binary
+*.pdf binary
+*.dll binary
+*.exe binary
