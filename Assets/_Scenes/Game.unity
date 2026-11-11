@@ -773,6 +773,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359318691}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1570739847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570739848}
+  - component: {fileID: 1570739849}
+  m_Layer: 0
+  m_Name: ResourceSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1570739848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570739847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1981005651}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1570739849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570739847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0917d6543512894429554a4c41280d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldGenerator
+  entries:
+  - prefab: {fileID: 7200542352746278978, guid: 85c9d08dfb86d4849aad5d2226f7944a, type: 3}
+    count: 22
+  - prefab: {fileID: 7936453254728713646, guid: b3e4060b2dc5d334ab41f5f145e82529, type: 3}
+    count: 14
+  - prefab: {fileID: 3523463025978250220, guid: 2d0f6e5c2950879428dfbfffe0c9b33a, type: 3}
+    count: 14
+  - prefab: {fileID: 4441304328233883180, guid: 952e5558500541a48ac5528d1d1c32c4, type: 3}
+    count: 6
+  - prefab: {fileID: 6152166097825007180, guid: 39ad5d6d612008840b7208b11a7a1a6a, type: 3}
+    count: 16
+  areaSize: {x: 56, y: 56}
+  minDistance: 2.5
+  safeRadius: 5
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxAttempts: 30
+  seed: 0
 --- !u!1 &1714928215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1219,7 @@ Transform:
   - {fileID: 1714928216}
   - {fileID: 2021580304}
   - {fileID: 99821701}
+  - {fileID: 1570739848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021580303
